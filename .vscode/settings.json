@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "/opt/anaconda3/envs/testing/bin/python",
+    "python.linting.enabled": true
+}
