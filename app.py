@@ -52,7 +52,8 @@ top_ids = top_ids[0:5]
 df_top = filtered_df[filtered_df['element'].isin(top_ids)]
 
 # plot
+title = 'Points Breakdown by Week for Top ' + position + 's'
 fig = px.line(df_top, x='round', y='total_points',
-              color='name', hover_name='name', title='Performance of top players by week')
+              color='name', hover_name='name', title=title)
 
 st.plotly_chart(fig, use_container_width=True)
